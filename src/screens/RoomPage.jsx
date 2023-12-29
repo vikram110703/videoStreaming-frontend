@@ -122,14 +122,14 @@ export const RoomPage = () => {
         {myStream && (
           <>
             <h1>My stream</h1>
-            <ReactPlayer url={myStream} height='300px' width='200px' playing  />
+            <ReactPlayer url={myStream} height='300px' width='200px' playing muted />
           </>
         )}
 
         {remoteStream && (
           <>
             <h1>Remote stream</h1>
-            <ReactPlayer url={remoteStream} height='300px' width='200px' playing muted />
+            <ReactPlayer url={remoteStream} height='300px' width='200px' playing  />
           </>
         )}
 
