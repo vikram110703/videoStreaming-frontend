@@ -10,7 +10,8 @@ export const useSocket=()=>{
 };
 
 const SocketProvider = (props) => {
-  const backendServer='localhost:8000';
+  // const backendServer='localhost:8000';
+  const backendServer='https://videostreaming-backend.onrender.com';
     const socket=useMemo(()=>io(backendServer),[]);
   return (
     <SocketContext.Provider value={socket} >
