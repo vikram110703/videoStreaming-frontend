@@ -18,7 +18,7 @@ export const Lobby = () => {
 
   const handleJoinRoom=useCallback((data)=>{
     const {email,room}=data;
-    console.log(email,room);
+    // console.log(email,room);
     navigate(`/room/${room}`);
   },[navigate]);
 

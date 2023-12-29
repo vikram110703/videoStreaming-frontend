@@ -32,7 +32,7 @@ export const RoomPage = () => {
     });
     setMyStream(stream);
 
-    console.log("incommig call ", from, offer);
+    // console.log("incommig call ", from, offer);
     const ans = await peer.getAnswer(offer);
     socket.emit('call:accepted', { to: from, ans });
   }, []);
@@ -122,7 +122,7 @@ export const RoomPage = () => {
         {myStream && (
           <>
             <h1>My stream</h1>
-            <ReactPlayer url={myStream} height='300px' width='200px' playing muted />
+            <ReactPlayer url={myStream} height='300px' width='200px' playing  />
           </>
         )}
 
